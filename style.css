@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #191f36;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  min-height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  margin-bottom: 100px;
+
+}
+a{
+  font-size: 20px;;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 10px 30px;
+  display: block; /* Ensure the anchor covers the li area */
+}
+
+header nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #191f36; /* Match the navbar background color */
+  left: 0;
+  top: 100%; /* Position directly below the parent item */
+  width: auto; /* Adjust width based on content */
+  padding: 0; /* Reset padding */
+}
+
+header nav ul li:hover ul {
+  display: block; /* Show the dropdown on hover */
+}
+
+header nav ul li ul li {
+  display: block; /* Dropdown items display vertically */
+}
+
+header nav ul li ul li a {
+  padding: 10px; /* Adjust padding for dropdown links */
+}
+
+#main {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.content {
+  width: 70%;
+  height: 400px;
+}
+
+span {
+  color: yellow;
+  font-family: Apple Chancery, cursive;
+}
+
+a:hover {
+  color: yellowgreen;
+}
+
+.link a {
+  padding: 2px 5px;
+  border: 5px solid lightblue;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.link {
+  margin-top: 25px;
+}
+p{
+  font-size: 20px;
+}
+
+.link a:hover {
+  background-color: rgb(72, 189, 236, 0.4);
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  margin: 10px;
+}
+footer .media .logo a{
+  display: inline-block;
+  padding: 5px 10px;
+}
